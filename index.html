@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fathima Fidha — Digital Marketer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>fidha<span class="brand-accent">.</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas class="hero-canvas" id="heroCanvas"></canvas>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="noise-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-image-wrap fade-up">
+        <div class="hero-image-ring"></div>
+        <div class="hero-avatar">
+          <div class="avatar-placeholder">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <div class="status-badge">
+          <span class="status-dot"></span> Available for work
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-greeting fade-up delay-1">Hello, I'm</p>
+        <h1 class="hero-name fade-up delay-2">Fathima<br /><em>Fidha</em></h1>
+        <div class="hero-role fade-up delay-3">
+          <span class="role-prefix">I'm a </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-bio fade-up delay-4">
+          Motivated Digital Marketing fresher with a passion for SEO, social media marketing, and helping brands grow online through creative and analytical thinking.
+        </p>
+        <div class="hero-cta fade-up delay-5">
+          <a href="#contact" class="btn btn-primary">
+            <span>Hire Me</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#about" class="btn btn-ghost">
+            <span>Learn More</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <em>Me</em></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-card glass">
+            <div class="about-avatar-lg">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-num">9+</span>
+                <span class="stat-label">Skills</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">2+</span>
+                <span class="stat-label">Languages</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">∞</span>
+                <span class="stat-label">Passion</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-tag-1 glass">SEO Expert</div>
+          <div class="about-tag-2 glass">Creative Thinker</div>
+        </div>
+
+        <div class="about-content reveal delay-2">
+          <h3>I'm Fidha, a <em>Digital Marketing Strategist</em></h3>
+          <p>
+            Dedicated to helping brands grow and succeed online. I combine creative thinking with analytical skills to build digital strategies that deliver real results.
+          </p>
+          <p>
+            My approach blends data-driven insights with compelling storytelling — ensuring your brand not only reaches the right audience but truly resonates with them.
+          </p>
+
+          <div class="specializations">
+            <div class="spec-item">
+              <i class="fas fa-hashtag"></i>
+              <span>Social Media Marketing</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-search"></i>
+              <span>Search Engine Optimization</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-pen-nib"></i>
+              <span>Content Creation</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-bullseye"></i>
+              <span>Paid Advertising</span>
+            </div>
+          </div>
+
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Adi Kadalayi, Kannur</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-envelope"></i>
+              <span>fathimathul08@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 7994051350</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">My <em>Skills</em></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card glass reveal" data-level="88">
+          <div class="skill-icon"><i class="fas fa-palette"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Content Design</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal delay-1" data-level="82">
+          <div class="skill-icon"><i class="fas fa-microphone"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Speaking</span>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal delay-2" data-level="90">
+          <div class="skill-icon"><i class="fas fa-bullhorn"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Content Marketing</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal delay-3" data-level="92">
+          <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Digital Marketing</span>
+            <span class="skill-pct">92%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal" data-level="85">
+          <div class="skill-icon"><i class="fas fa-edit"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Content Editing</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal delay-1" data-level="88">
+          <div class="skill-icon"><i class="fas fa-share-alt"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">SMM</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal delay-2" data-level="86">
+          <div class="skill-icon"><i class="fas fa-search"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">SEO</span>
+            <span class="skill-pct">86%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="86"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal delay-3" data-level="78">
+          <div class="skill-icon"><i class="fas fa-video"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Production Software</span>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal" data-level="75">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">HTML</span>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="languages-wrap reveal">
+        <h3 class="sub-title">Languages</h3>
+        <div class="lang-cards">
+          <div class="lang-card glass">
+            <div class="lang-flag">🇬🇧</div>
+            <span>English</span>
+            <div class="lang-level">
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="lang-card glass">
+            <div class="lang-flag">🇮🇳</div>
+            <span>Malayalam</span>
+            <div class="lang-level">
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title">My <em>Services</em></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card glass reveal">
+          <div class="service-number">01</div>
+          <div class="service-icon"><i class="fas fa-search"></i></div>
+          <h3>SEO Optimization</h3>
+          <p>Boost your website's visibility on search engines with keyword research, on-page & off-page optimization strategies tailored for growth.</p>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <div class="service-card glass reveal delay-1">
+          <div class="service-number">02</div>
+          <div class="service-icon"><i class="fas fa-share-alt"></i></div>
+          <h3>Social Media Marketing</h3>
+          <p>Build an engaging social presence across platforms. From strategy to execution, I craft content that resonates and converts.</p>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <div class="service-card glass reveal delay-2">
+          <div class="service-number">03</div>
+          <div class="service-icon"><i class="fas fa-ad"></i></div>
+          <h3>Paid Advertising</h3>
+          <p>Run data-driven ad campaigns on Google, Meta, and beyond. Maximize ROI with targeted, performance-focused advertising.</p>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <div class="service-card glass reveal delay-3">
+          <div class="service-number">04</div>
+          <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+          <h3>Content Creation</h3>
+          <p>Compelling copy, graphics, and multimedia content designed to tell your brand's story and engage your target audience effectively.</p>
+          <div class="service-hover-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Background</span>
+        <h2 class="section-title">My <em>Education</em></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-card glass">
+            <div class="tl-year">2024 – 2025</div>
+            <h3>Fashion Design</h3>
+            <p class="tl-institute">FDGT Thottada</p>
+            <p class="tl-desc">Completed a comprehensive fashion design program, gaining skills in design thinking, visual communication, and creative production.</p>
+            <div class="tl-badge">Diploma</div>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal delay-2">
+          <div class="timeline-dot">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-card glass">
+            <div class="tl-year">2021 – 2022</div>
+            <h3>Plus Two</h3>
+            <p class="tl-institute">Deenul Islam Sabha Girls Higher Secondary School, Kannur</p>
+            <p class="tl-desc">Completed higher secondary education with a strong academic foundation and developed communication and critical-thinking skills.</p>
+            <div class="tl-badge">HSE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <em>Touch</em></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Ready to grow your brand?</h3>
+          <p>Let's collaborate and create a digital strategy that truly elevates your business. Drop me a message and I'll get back to you soon!</p>
+
+          <div class="contact-cards">
+            <a href="tel:7994051350" class="contact-card glass">
+              <div class="cc-icon"><i class="fas fa-phone"></i></div>
+              <div class="cc-text">
+                <span class="cc-label">Phone</span>
+                <span class="cc-val">+91 7994051350</span>
+              </div>
+            </a>
+            <a href="mailto:fathimathul08@gmail.com" class="contact-card glass">
+              <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+              <div class="cc-text">
+                <span class="cc-label">Email</span>
+                <span class="cc-val">fathimathul08@gmail.com</span>
+              </div>
+            </a>
+            <div class="contact-card glass">
+              <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="cc-text">
+                <span class="cc-label">Location</span>
+                <span class="cc-val">Adi Kadalayi, Kannur</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal delay-2">
+          <form class="contact-form glass" id="contactForm" novalidate>
+            <div class="form-group">
+              <input type="text" id="name" placeholder=" " required />
+              <label for="name">Your Name</label>
+              <span class="field-line"></span>
+              <span class="error-msg" id="nameErr"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder=" " required />
+              <label for="email">Email Address</label>
+              <span class="field-line"></span>
+              <span class="error-msg" id="emailErr"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" placeholder=" " required />
+              <label for="subject">Subject</label>
+              <span class="field-line"></span>
+              <span class="error-msg" id="subjectErr"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Message</label>
+              <span class="field-line"></span>
+              <span class="error-msg" id="msgErr"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <span>Message sent successfully!</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-dot"></span>fidha<span class="brand-accent">.</span>
+          <p>Digital Marketer & Brand Strategist</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="mailto:fathimathul08@gmail.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Fathima Fidha. Crafted with <i class="fas fa-heart"></i> and passion.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
